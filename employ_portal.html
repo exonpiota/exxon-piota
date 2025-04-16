@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/exon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/exon_med.css">
+    <title>EXON-PIOTA CONSULTANCY</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./formHandler.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <h4>EXON-PIOTA CONSULTANCY</h4>
+            <img src="./Images/exon.png" width="60" height="60"/>
+        </div>
+        <ul class="nav_links">
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+             <div class="menu">
+                <li>
+                    <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                    <a href="./about_us.html">About</a>
+                    </li>
+                    <li>
+                    <a href="./employ_portal.html">Employee Portal</a>
+                    </li>
+                    <li>
+                    <a href="./contact_us.html">Contact</a>
+                </li>
+          </div>
+        </ul>
+    </nav>
+    <div class="wlcm">
+        <img src="" alt="">
+        <h2>WELCOME TO EMPLOYEE PORTAL</h2>
+   </div>
+   <div class="container">
+        <header class="loghead">
+            <div class="log">
+                <h2>Employment Application</h2>  
+            </div>
+        </header>
+
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <form id="applicationForm">
+                <label>Full Name: <input type="text" name="fullname" required></label>
+                <label>Address: <input type="text" name="address" required></label>
+                <label>Birth Date: <input type="date" name="dob" required></label>
+                <label>E-Mail: <input type="email" name="email" required></label>
+                <label>Company Name: <input type="text" name="company"></label>
+                <label>Position: <input type="text" name="position"></label>
+
+                <div class="gender">
+                    <span>Gender:</span>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+                
+                <section class="job-info">
+                    <h2></h2>
+                    <label>Job or Office Position: <input type="text" name="job-position" required></label>
+
+                    <label>Job Offers:
+                        <select name="job-offers" required>
+                            <option value="" disabled selected>Select a job offer</option>
+                            <option value="Software Engineer">Data Entry Clerk</option>
+                            <option value="Marketing Specialist">Human Resource</option>
+                            <option value="Project Manager">Project Manager</option>
+                            <option value="Graphic Designer">Account Assistant</option>
+                            <option value="Sales Representative">Sales Representative</option>
+                            <option value="Sales Representative">Finance Legal Advisor</option>
+                        </select>
+                    </label>
+                </section>
+                <section class="upload-section">
+                    <label for="resumeUpload">Upload Your Document (e.g., Resume, Cover Letter):</label>
+                    <input type="file" id="resumeUpload" name="resumeUpload" accept=".pdf,.doc,.docx,.txt" required>
+                </section>
+
+                <div class="submt">
+                    <label>Date: <input type="date" name="date" required></label>
+                    <p>Signature: ______________</p>
+                    <div class="btn">
+                        <a href="./cngrt.html" class="button" onclick="validateForm(event)">Submit Application</a>
+                    </div>
+                    <!-- FormSubmit hidden fields -->
+                    <!-- <input type="hidden" name="_captcha" value="false"> 
+                    <input type="hidden" name="_next" value="https://your-website.com/thank-you.html"> -->
+                    
+                </div>
+            </form>
+        </section>
+    </div>
+   <div class="foot">
+        <h4>EXON-PIOTA CONSULTANCY</h4>
+        <p>385 N Azalea Ave.</p>
+        <p>San Bernardino, CA 92407</p>
+        <h4><a href="./tellon3.html">CONTACT US</a></h4>
+    </div>
+    <footer class="fut">
+        © 2025 Exon-Piota Consultancy. All right reserved.
+    </footer>
+    <script src="./test.js"></script>
+    <script src="./test1.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./formHandler.js"></script>
+</body>
+</html>
