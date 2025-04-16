@@ -109,6 +109,65 @@
     <script src="./test.js"></script>
     <script src="./test1.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="./formHandler.js"></script>
+    <script src="./formHandler.js"></script>
+    <script>
+        // Initialize EmailJS
+    emailjs.init("juaJZI4iUmsBoqFDB"); // Replace with your EmailJS user ID
+
+    // Handle form submission
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Collect form data
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Validate form data
+        if (!firstName || !lastName || !message) {
+            alert("Please fill out all fields before submitting.");
+            return;
+        }
+
+        // Send email using EmailJS
+        emailjs.send("service_2sxmr6t", "template_qa01wj2", {
+            firstName: firstName,
+            lastName: lastName,
+            message: message,
+        })
+            .then(function (response) {
+                alert("Your message has been sent successfully!");
+            })
+            .catch(function (error) {
+                alert("Failed to send your message. Please try again.");
+                console.error("Error:", error);
+            });
+    });
+    </script>
+    <script>
+        function validateForm(event) {
+    // Prevent the default action of the link
+        event.preventDefault();
+
+        // Check if the form inputs are empty
+        const form = document.querySelector('form');
+        const inputs = form.querySelectorAll('input[required]');
+        let isFormValid = true;
+
+        inputs.forEach(input => {
+            if (!input.value.trim()) {
+                isFormValid = false;
+            }
+        });
+
+        // Show alert if the form is incomplete
+        if (!isFormValid) {
+            alert("Please fill out all required fields before submitting the form.");
+        } else {
+            // Redirect to the next page if the form is valid
+            window.location.href = './cngrt.html';
+        }
+    }
+    </script>
 </body>
 </html>
