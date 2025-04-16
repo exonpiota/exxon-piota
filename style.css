@@ -123,15 +123,15 @@ ul{
     border-radius:10px;
 }
 .swiper-slide:first-child{
-    background-image: url('../Images/off.jpeg');
+    background-image: url('./Images/off.jpeg');
     background-size: cover;
 }
 .swiper-slide:nth-child(2){
-    background-image: url('../Images/off.jpeg');
+    background-image: url('./Images/off.jpeg');
     background-size: cover;
 }
 .swiper-slide:last-child{
-    background-image: url('../Images/settings.jpeg');
+    background-image: url('./Images/settings.jpeg');
     background-size: cover;
 }
 .scnd_bdy{
@@ -192,7 +192,7 @@ ul{
 .tm_hd{
     width: auto;
     height: 45vh;
-    background-image: url(../Images/settings.jpeg);
+    background-image: url('./Images/settings.jpeg');
 }
 .tm_hd h2{
     text-align:center;
@@ -286,11 +286,11 @@ ul{
 
 .wlcm{
     height: 40vh;
-    background-image: url(../Images/off.jpeg);
+    background-image: url('./Images/off.jpe');
     margin-bottom: 1.5rem;
 }
 .wlcm h2{
-    background-image: url(../Images/off.jpeg);
+    background-image: url('./Images/off.jpeg');
     text-align: center;
     margin-top: 7rem;
     font-size: 2rem;
