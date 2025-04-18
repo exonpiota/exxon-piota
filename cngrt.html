@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/exon.png">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html" class="logo-link">
+                    <h4>EXON-PIOTA CONSULTANCY</h4>
+                </a>
+              <img src="./Images/exon.png" width="60" height="60" alt="Exon Logo"/>
+            </div>
+            <ul class="nav_links">
+                <span class="hamburger">&#9776;</span> <!-- Hamburger icon -->
+                <div class="menu">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">About</a>
+                    </li>
+                    <li>
+                        <a href="./employ_portal.html">Employee Portal</a>
+                    </li>
+                    <li>
+                        <a href="./contact_us.html">Contact</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="congr">
+        <div class="lat1">
+            <h1>CONGRATULATIONS!!!</h1>
+        </div>
+        <div class="cmmnt">
+        <p>Your Application has been submitted.</p>
+        <p>You will recieve a notification to your E-mail provided upon review complition.</p>
+        <p>Further recruitment process will stated in the mail, Thank you for your interest in working with us. </p>
+        </div>
+    </div>
+
+    <div class="gen_about">
+        <div class="abt">
+            <a href="./about_us.html">ABOUT US</a>
+        </div>
+        <div class="gen_pattn">
+            <div class="pattn">
+                <div class="img_wrap">
+                    <img src="./Images/whatwedo.png" alt="">
+                </div>
+                <div class="pattn1">
+                <h4>WHAT WE DO</h4>
+                </div>
+                <div class="parag">
+                <p>We help companies become more profitable by reducing their cost, increasing efficiencies, strengthening revenues, and ultimately improving their profitability. Our risk free business model typical yields between 10% to 20% profitability to our clients.</p>
+                </div>
+            </div>
+            <div class="pattn">
+                <div class="img_wrap">
+                    <img src="./Images/target.png" alt="">
+                </div>
+                <div class="pattn1">
+                <h4>TARGETED CUSTOMERS</h4>
+                </div>
+                <div class="parag">
+                <p>Our target clients are businesses that are categorized as small to midsize. These include, but are not exclusive to businesses that may not have the resources or supply chain capabilities to deliver the desired year-over-year cost improvements required to maintain or increase a competitive edge within their respective industry.</p>
+                </div>
+            </div>
+            <div class="pattn">
+                <div class="img_wrap">
+                    <img src="./Images/model.png" alt="">
+                </div>
+                <div class="pattn1">
+                <h4>BUSINESS MODEL</h4>
+                </div>
+                <div class="parag">
+                <p>Our primary focus is to deliver bottom line results to our clients. With a high level of confidence in achieving this objective, we provide our services at no cost or risk to the client. Upon successful delivery of the cost improvements, we will share in a percentage of the savings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <h4>EXON-PIOTA CONSULTANCY</h4>
+        <p>385 N Azalea Ave.</p>
+        <p>San Bernardino, CA 92407</p>
+        <h4><a href="./tellon3.html">CONTACT US</a></h4>
+    </div>
+    <footer>
+        <div class="fut">
+            © 2025 Exon-Piota Consultancy. All right reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          loop: true,
+          autoplay:true
+        });
+    </script>
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('active');
+        });
+        window.addEventListener('click', (event) => {
+            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                menu.classList.remove('active');
+            }
+        });
+        const navLinks = document.querySelectorAll('.nav_links a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
