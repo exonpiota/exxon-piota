@@ -73,3 +73,14 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         });
 });
 
+
+function toggleReadMore(button) {
+    const content = button.previousElementSibling.querySelector('.read-more-content');
+    if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'inline'; // Show the hidden content
+        button.textContent = 'Read Less'; // Change button text
+    } else {
+        content.style.display = 'none'; // Hide the content
+        button.textContent = 'Read More'; // Change button text
+    }
+}
