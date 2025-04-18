@@ -4218,3 +4218,7 @@ footer {
 .team-fina-11 {
     box-sizing: border-box;
 }
+
+.read-more-content {
+    display: none;
+}
