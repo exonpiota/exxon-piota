@@ -4222,3 +4222,21 @@ footer {
 .read-more-content {
     display: none;
 }
+
+.congr{
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.cmmnt{
+    margin-top: 2rem;
+}
+
+.cmmnt p{
+    font-size: 24px;
+}
