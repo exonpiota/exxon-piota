@@ -57,21 +57,21 @@ function validateForm(event) {
     }
 }
 
-emailjs.init("juaJZI4iUmsBoqFDB");
+// emailjs.init("juaJZI4iUmsBoqFDB");
 
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
+// document.getElementById("contact-form").addEventListener("submit", function(event) {
+//     event.preventDefault(); // Prevent default form submission
 
-    // Send form data using EmailJS
-    emailjs.sendForm("service_t9v7ibd", "template_3nnivzo", this)
-        .then(function(response) {
-            alert("Form submitted successfully!");
-            console.log("SUCCESS!", response.status, response.text);
-        }, function(error) {
-            alert("Failed to send form. Please try again.");
-            console.log("FAILED...", error);
-        });
-});
+//     // Send form data using EmailJS
+//     emailjs.sendForm("service_t9v7ibd", "template_3nnivzo", this)
+//         .then(function(response) {
+//             alert("Form submitted successfully!");
+//             console.log("SUCCESS!", response.status, response.text);
+//         }, function(error) {
+//             alert("Failed to send form. Please try again.");
+//             console.log("FAILED...", error);
+//         });
+// });
 
 
 function toggleReadMore(button) {
