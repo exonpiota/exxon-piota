@@ -1161,7 +1161,7 @@ input, select {
     width: 8rem;
     font-size: 1rem;
 }
-.button{
+#button{
     margin-top: 1rem;
     color: white;
     text-align: center;
