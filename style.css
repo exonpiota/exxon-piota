@@ -1152,16 +1152,15 @@ input, select {
     margin-bottom: 7px;
 }
 .btn{
-    background: #efd0d0;
-    font-size: 16px;
     padding: 10px;
     margin-top: 1.5rem;
     cursor: pointer;
     border-radius: 5px;
-    width: 8rem;
-    font-size: 1rem;
+    width: 10rem;
 }
 #button{
+    font-size: 16px;
+    font-weight: 300;
     margin-top: 1rem;
     color: black;
     text-align: center;
