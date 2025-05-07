@@ -1158,7 +1158,7 @@ input, select {
     margin-top: 1.5rem;
     cursor: pointer;
     border-radius: 5px;
-    width: 10rem;
+    width: 8rem;
     font-size: 1rem;
 }
 .button{
@@ -1167,7 +1167,7 @@ input, select {
     text-align: center;
 }
 .btn:hover {
-    background: #6b6464;
+    background: #f2efef;
 }
 
 .checkbox-label {
