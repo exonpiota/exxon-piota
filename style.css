@@ -1152,7 +1152,7 @@ input, select {
     margin-bottom: 7px;
 }
 .btn{
-    background: #333;
+    background: #efd0d0;
     font-size: 16px;
     padding: 10px;
     margin-top: 1.5rem;
@@ -1163,7 +1163,7 @@ input, select {
 }
 #button{
     margin-top: 1rem;
-    color: white;
+    color: black;
     text-align: center;
 }
 .btn:hover {
