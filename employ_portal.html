@@ -3,19 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./form.css">
-    <link rel="stylesheet" href="./CSS/exon_med.css">
-    <title>EXON-PIOTA CONSULTANCY</title>
+    <link rel="shortcut icon" href="./Images/exon.png">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Document</title>
 </head>
 <body>
-    <form class="tst_frm" action="https://formsubmit.co/officeadmin2020@protonmail.com" method="POST" enctype="multipart/form-data">
-        <label>Full Name: <input type="text" name="fullname" required></label><br>
-        <label>Address: <input type="text" name="address" required></label><br>
-        <label>Birth Date: <input type="date" name="dob" required></label><br>
-        <label>E-Mail: <input type="email" name="email" required></label><br>
-        <label>Company Name: <input type="text" name="company"></label><br>
-        <label>Position: <input type="text" name="position"></label><br>
-        <button>Submit Application</button>
-    </form>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html" class="logo-link">
+                    <h4>EXON-PIOTA CONSULTANCY</h4>
+                </a>
+              <img src="./Images/exon.png" width="60" height="60" alt="Exon Logo"/>
+            </div>
+            <ul class="nav_links">
+                <span class="hamburger">&#9776;</span> <!-- Hamburger icon -->
+                <div class="menu">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">About</a>
+                    </li>
+                     <li>
+                        <a href="./our_team.html">Leadership</a>
+                    </li>
+                    <li>
+                        <a href="./employ_portal.html">Employee Portal</a>
+                    </li>
+                    <li>
+                        <a href="./contact_us.html">Contact</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div><p></p></div>
+
+    <div class="wlcm">
+        <img src="" alt="">
+        <h2>WELCOME TO EMPLOYEE PORTAL</h2>
+   </div>
+   <div class="container">
+        <div class="loghead">
+            <div class="log">
+                <h2>Employment Application</h2>  
+            </div>
+        </div>
+
+        <section class="personal-info">
+            <h2>Personal Information</h2>
+            <form class="tst_frm" action="https://formsubmit.co/officeadmin2020@protonmail.com" method="POST" enctype="multipart/form-data">
+                <label>Full Name: <input type="text" name="fullname" required></label>
+                <label>Address: <input type="text" name="address" required></label>
+                <label>City: <input type="text" name="address" required></label>
+                <label>State: <input type="text" name="address" required></label>
+                <label>ZIP CODE: <input type="text" name="address" required></label>
+                <label>Birth Date: <input type="date" name="dob" required></label>
+                <label>E-Mail: <input type="email" name="email" required></label>
+                <label>Phone Contact: <input type="email" name="phone-number" required></label>
+                <label>Company Name: <input type="text" name="company"></label>
+                <label>Position: <input type="text" name="position"></label>
+                <div class="gender">
+                    <span>Gender:</span>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                </div>
+                <label>Job Offers:
+                    <select name="job-offers" required>
+                        <option value="" disabled selected>Select a job offer</option>
+                        <option value="Software Engineer">Data Entry Clerk</option>
+                        <option value="Marketing Specialist">Human Resource</option>
+                        <option value="Project Manager">Project Manager</option>
+                        <option value="Graphic Designer">Account Assistant</option>
+                        <option value="Sales Representative">Sales Representative</option>
+                        <option value="Sales Representative">Finance Legal Advisor</option>
+                    </select>
+                </label>
+                <section class="upload-section">
+                    <label for="resumeUpload">Upload Your Document (e.g., Resume, Cover Letter):</label>
+                    <input type="file" id="resumeUpload" name="resumeUpload" accept=".pdf,.doc,.docx,.txt" required>
+                </section><br>
+                <button>Submit Application</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="gen_about">
+        <div class="abt">
+            <a href="./exon_piota_about.html">ABOUT US</a>
+        </div>
+        <div class="gen_pattn">
+            <div class="pattn">
+                <div class="img_wrap">
+                    <img src="./Images/whatwedo.png" alt="">
+                </div>
+                <div class="pattn1">
+                <h4>WHAT WE DO</h4>
+                </div>
+                <div class="parag">
+                <p>We help companies become more profitable by reducing their cost, increasing efficiencies, strengthening revenues, and ultimately improving their profitability. Our risk free business model typical yields between 10% to 20% profitability to our clients.</p>
+                </div>
+            </div>
+            <div class="pattn">
+                <div class="img_wrap">
+                    <img src="./Images/target.png" alt="">
+                </div>
+                <div class="pattn1">
+                <h4>TARGETED CUSTOMERS</h4>
+                </div>
+                <div class="parag">
+                <p>Our target clients are businesses that are categorized as small to midsize. These include, but are not exclusive to businesses that may not have the resources or supply chain capabilities to deliver the desired year-over-year cost improvements required to maintain or increase a competitive edge within their respective industry.</p>
+                </div>
+            </div>
+            <div class="pattn">
+                <div class="img_wrap">
+                    <img src="./Images/model.png" alt="">
+                </div>
+                <div class="pattn1">
+                <h4>BUSINESS MODEL</h4>
+                </div>
+                <div class="parag">
+                <p>Our primary focus is to deliver bottom line results to our clients. With a high level of confidence in achieving this objective, we provide our services at no cost or risk to the client. Upon successful delivery of the cost improvements, we will share in a percentage of the savings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <h4>EXON-PIOTA CONSULTANCY</h4>
+        <p>385 N Azalea Ave.</p>
+        <p>San Bernardino, CA 92407</p>
+        <h4><a href="./contact_us.html">CONTACT US</a></h4>
+    </div>
+    <footer>
+        <div class="fut">
+            © 2025 Exon-Piota Consultancy. All right reserved.
+        </div>
+    </footer>
 </body>
 </html>
