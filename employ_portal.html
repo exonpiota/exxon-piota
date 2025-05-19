@@ -57,7 +57,7 @@
 
         <section class="personal-info">
             <h2>Personal Information</h2>
-            <form class="tst_frm" action="https://formsubmit.co/officeadmin2020@protonmail.com" method="POST" enctype="multipart/form-data">
+            <form class="tst_frm" id="myForm" action="https://formsubmit.co/officeadmin2020@protonmail.com" method="POST" enctype="multipart/form-data">
                 <label>Full Name: <input type="text" name="fullname" required></label>
                 <label>Address: <input type="text" name="address" required></label>
                 <label>City: <input type="text" name="address" required></label>
@@ -210,5 +210,12 @@
             © 2025 Exon-Piota Consultancy. All right reserved.
         </div>
     </footer>
+    <script>
+    document.getElementById('myForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent actual form submission
+      // ... you can process form data here ...
+      window.location.href = "./cngrt.html"; // Redirect to homepage
+    });
+  </script>
 </body>
 </html>
